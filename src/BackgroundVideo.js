@@ -41,6 +41,7 @@ class BackgroundVideo extends Component {
         });
         var video = document.getElementById("backgroundVideo");
         video.load()
+        this.props.sunCallback();
     }
 }
 

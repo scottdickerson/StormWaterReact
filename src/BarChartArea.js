@@ -66,5 +66,16 @@ class BarChartArea extends Component {
         this.aquiferBar.activateBar();
     }
 
+    hideArea() {
+        this.setState( {
+            pollutionHeight: "30px",
+            aquiferHeight: "30px",
+            floodHeight: "30px",
+            visible: false,
+        });
+        this.pollutionBar.hideBar();
+        this.floodBar.hideBar();
+        this.aquiferBar.hideBar();
+    }
 }
 export default BarChartArea;

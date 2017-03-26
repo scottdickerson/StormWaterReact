@@ -36,5 +36,11 @@ class BarChart extends Component {
         }
     }
 
+    hideBar() {
+        this.state = {
+            visible: false,
+        }
+    }
+
 }
 export default BarChart;
