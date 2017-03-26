@@ -1,0 +1,37 @@
+.graph {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    width: 160px;
+    height: 100px;
+    transition: height 10s;
+}
+
+.graph1 {
+    position:absolute;
+    bottom: 0px;
+    background-color: #b3d4fc;
+    z-index: 2;
+}
+
+.graphLabel {
+    top: -10px;
+    position: relative;
+}
+
+.graphIcon {
+    top: -15px;
+    left: 65px;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}

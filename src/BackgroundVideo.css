@@ -1,0 +1,36 @@
+.backgroundVideo {
+    width: 1920px;
+    height: 1080px;
+    z-index:0;
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+}
+
+.outer-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.inner-container {
+    display: inline-block;
+    position: relative;
+}
+
+.rain {
+    position:absolute;
+    top:100px;
+    left:100px;
+    z-index:1;
+    background: url(img/rainCloud.png);
+    height: 120px;
+    width: 120px;
+}
+.sun {
+    position:absolute;
+    top:100px;
+    right:100px;
+    z-index:1;
+    background: url(img/sun.jpg);
+    height: 120px;
+    width: 120px;
+}
