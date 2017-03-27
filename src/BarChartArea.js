@@ -7,6 +7,7 @@ class BarChartArea extends Component {
 
     constructor(props) {
         super(props);
+        this.rightAreaOffset=1950;
         this.state = {pollutionHeight: "30px",
                       aquiferHeight: "30px",
                       floodHeight: "30px",
@@ -27,7 +28,7 @@ class BarChartArea extends Component {
                 right: "0px",
                 visibility: this.state.visible?"visible":"hidden"
             }
-            leftOffset = 780;
+            leftOffset = this.rightAreaOffset;
         }
 
         return (

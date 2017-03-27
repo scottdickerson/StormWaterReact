@@ -15,7 +15,8 @@ class BarChart extends Component {
             left: this.props.left,
             right: this.props.right,
             height: this.props.height,
-            visibility: this.state.visible?"visible":"hidden"
+            visibility: this.state.visible?"visible":"hidden",
+            transition: this.state.visible?"height 10s": "0s"
         };
 
         let iconStyle = {
