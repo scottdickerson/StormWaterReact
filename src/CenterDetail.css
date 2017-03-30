@@ -1,20 +1,14 @@
 .outerCircle {
-    background-color: white;
-    width:1000px;
-    height: 1000px;
-    z-index:5;
     position: absolute;
-    border-color: black;
-    border-style: solid;
-    border-radius: 50%;
-    left: 800px;
+    left: 600px;
     top: 200px;
-    border-width:1px;
+    width:600px;
+    height: 600px;
 }
 
 .centerVideo {
-    width:950px;
-    height: 950px;
+    width:600px;
+    height: 600px;
     z-index:5;
     position: absolute;
     border-color: black;

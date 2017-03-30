@@ -1,40 +1,6 @@
-.buttonOuterCircle {
-    background-color: white;
-    width:150px;
-    height: 150px;
-    z-index:5;
+.buttonImage {
     position: absolute;
-    border-color: black;
-    border-style: solid;
-    border-radius: 50%;
-    border-width:1px;
-    box-shadow: 5px 5px 5px black;
-}
-
-.centerButton {
-    width:125px;
-    height: 125px;
-    z-index:5;
-    position: absolute;
-    border-color: black;
-    border-style: solid;
-    border-radius: 50%;
-    left: 10px;
-    top: 10px;
-    border-width:1px;
-}
-
-.centerButton:active {
-    background-color: #b3d4fc;
-}
-
-.label {
-    width:125px;
-    height: 125px;
-    font-size: 20px;
-    z-index:5;
-    position: absolute;
-    top: 50px;
-    border-width:1px;
-    user-select: none;
+    z-index: 5;
+    height: 145px;
+    width: 141px;
 }

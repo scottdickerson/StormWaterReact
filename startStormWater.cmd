@@ -1,0 +1,1 @@
+start chrome --kiosk --app=http://127.0.0.1:3000 --start-fullscreen --disable-pinch

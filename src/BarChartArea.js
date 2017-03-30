@@ -7,33 +7,40 @@ class BarChartArea extends Component {
 
     constructor(props) {
         super(props);
-        this.rightAreaOffset=1950;
+        this.rightAreaOffset=1448;
         this.state = {pollutionHeight: "30px",
                       aquiferHeight: "30px",
                       floodHeight: "30px",
                       visible: false,
+                      height: "0px",
         };
     }
 
     render() {
         var style;
-        var leftOffset=40;
+        var leftOffset=70;
+        var visibility=this.state.visible?"visible":"hidden";
+        var transition="height 2s";
         if (this.props.position === "left") {
             style={
                 left: "0px",
-                visibility: this.state.visible?"visible":"hidden"
+                visibility: visibility,
+                height: this.state.height,
+                transition: transition,
             }
         } else {
             style={
                 right: "0px",
-                visibility: this.state.visible?"visible":"hidden"
+                visibility: visibility,
+                height: this.state.height,
+                transition: transition,
             }
             leftOffset = this.rightAreaOffset;
         }
 
         return (
             <div>
-                <BarChart left={leftOffset+20+"px"}
+                <BarChart left={leftOffset+"px"}
                           label="Pollution"
                           iconSrc="img/pollution.png"
                           height={this.state.pollutionHeight}
@@ -61,7 +68,10 @@ class BarChartArea extends Component {
             aquiferHeight: this.props.aquiferHeight,
             floodHeight: this.props.floodHeight,
             visible: true,
+            height: this.props.height,
+            transition: "height 2s",
         });
+
         this.pollutionBar.activateBar();
         this.floodBar.activateBar();
         this.aquiferBar.activateBar();
@@ -73,6 +83,8 @@ class BarChartArea extends Component {
             aquiferHeight: "30px",
             floodHeight: "30px",
             visible: false,
+            height: "0px",
+            transition: "height 0s",
         });
         this.pollutionBar.hideBar();
         this.floodBar.hideBar();

@@ -1,10 +1,10 @@
 .graphContainer {
     position:absolute;
-    background-color: #b3d4fc;
-    height: 400px;
-    width: 650px;
-    opacity: 0.2;
+    background-color: #000000;
+    width: 400px;
+    opacity: 0.5;
     z-index: 1;
     bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
