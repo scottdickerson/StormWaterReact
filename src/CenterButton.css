@@ -4,3 +4,28 @@
     height: 145px;
     width: 141px;
 }
+
+.top {
+    left: 890px;
+    top: 231px;
+}
+
+.right {
+    right: 609px;
+    top: 431px;
+}
+
+.bottom-right {
+    right: 717px;
+    bottom: 183px;
+}
+
+.bottom-left {
+    left: 717px;
+    bottom: 183px;
+}
+
+.left {
+    left: 612px;
+    top: 431px;
+}

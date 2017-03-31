@@ -1,0 +1,15 @@
+.weatherButton {
+    width: 145px;
+    height: 150px;
+    z-index:1;
+}
+.rain {
+    position:absolute;
+    right:70px;
+    top:80px;
+}
+.sun {
+    position:absolute;
+    left:70px;
+    top:80px;
+}

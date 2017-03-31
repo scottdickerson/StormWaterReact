@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import './BackgroundVideo.css';
+import WeatherButton from './WeatherButton'
 
 class BackgroundVideo extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {video: this.props.startVideo};
+        this.state = {
+            video: "videos/sunVideo.mp4"
+        };
     }
 
     render() {
+
         return (
             <div className="outer-container">
-                <button className="rain" onClick={this.rain.bind(this)}>Rain</button>
-                <button className="sun" onClick={this.sun.bind(this)}>Sun</button>
+                <img className="title" alt="Rainfall Revolution" src="img/1077x259-Title-RainfallRevolution-01.png"></img>
+                <WeatherButton className="rain" onClick={this.rain.bind(this)} ref={(rainButton) => { this.rainButton = rainButton; }}></WeatherButton>
+                <WeatherButton className="sun" onClick={this.sun.bind(this)} ref={(sunButton) => { this.sunButton = sunButton; }}></WeatherButton>
                 <div className="inner-container">
                     <div>
                         <video id="backgroundVideo" className="backgroundVideo" muted={true} loop autoPlay={true} preload="true">
@@ -32,6 +37,8 @@ class BackgroundVideo extends Component {
          });
          var video = document.getElementById("backgroundVideo");
          video.load();
+         this.rainButton.setSelected(true);
+         this.sunButton.setSelected(false);
         this.props.rainCallback();
     }
     sun() {
@@ -41,6 +48,8 @@ class BackgroundVideo extends Component {
         });
         var video = document.getElementById("backgroundVideo");
         video.load()
+        this.sunButton.setSelected(true);
+        this.rainButton.setSelected(false);
         this.props.sunCallback();
     }
 }

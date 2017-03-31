@@ -1,20 +1,35 @@
-.outerCircle {
+.centerImage {
     position: absolute;
-    left: 600px;
-    top: 200px;
-    width:600px;
-    height: 600px;
+    left: 620px;
+    top: 251px;
+    width:680px;
+    height: 680px;
 }
 
 .centerVideo {
-    width:600px;
-    height: 600px;
+    width:563px;
     z-index:5;
     position: absolute;
+    left:676px;
+    top:310px;
     border-color: black;
     border-style: solid;
     border-radius: 50%;
-    left: 25px;
-    top: 25px;
     border-width:1px;
+}
+
+.halfMoon {
+    opacity:.5;
+    z-index:4;
+}
+
+.centerText {
+    position: absolute;
+    left: 725px;
+    top: 600px;
+    width: 500px;
+    text-align: center;
+    font-family: Ubuntu Condensed, sans-serif;
+    font-size: 15pt;
+    color: #FFFFFF;
 }

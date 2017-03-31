@@ -8,67 +8,36 @@ class CenterButton extends Component {
         this.state = {
             selected: false,
         };
-        let horizontalOffset = "275px";
-        let verticalOffset = "-25px";
+
         switch (this.props.position) {
             case "top":
-                this.style= {
-                    left: horizontalOffset,
-                    top: verticalOffset,
-                };
                 this.imgNumber = "01";
                 break;
             case "right":
-                this.style= {
-                    right: verticalOffset,
-                    bottom: horizontalOffset,
-                };
                 this.imgNumber = "03";
                 break;
             case "bottom-right":
-                this.style= {
-                    left: horizontalOffset,
-                    bottom: verticalOffset,
-                };
                 this.imgNumber = "05";
                 break;
             case "bottom-left":
-                this.style= {
-                    right: verticalOffset,
-                    bottom: horizontalOffset,
-                };
                 this.imgNumber = "04";
                 break;
             case "left":
-                this.style= {
-                    left: verticalOffset,
-                    bottom: horizontalOffset,
-                };
                 this.imgNumber = "02";
                 break;
             default:
-                this.style= {
-                    left: horizontalOffset,
-                    top: verticalOffset,
-                }
+                break;
         }
     }
 
     render() {
 
         return (
-        <img src={"img/"+this.imgNumber+"-"+this.props.src+(this.state.selected?"-ON":"-OFF")+".png"}
-             alt={this.props.label}
-             style={this.style}
-             className="buttonImage"
-             onClick={this.props.onClick.bind(this)}></img>
-            /*<div className="buttonOuterCircle" style={this.style}>
-                <div className="centerButton" onClick={this.props.onClick.bind(this)} >
-                <div className="label">
-                    {this.props.label}
-                </div>
-            </div>
-            </div>*/
+            <img src={"img/"+this.imgNumber+"-"+this.props.src+(this.state.selected?"-ON":"-OFF")+".png"}
+                 alt={this.props.label}
+                 style={this.style}
+                 className={"buttonImage "+ this.props.position}
+                 onClick={this.props.onClick.bind(this)}></img>
         );
 
     }
