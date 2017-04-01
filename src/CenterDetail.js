@@ -23,7 +23,7 @@ class CenterDetail extends Component {
         }
         return (
         <div>
-            <img className="centerImage" alt="" src="img/680x680-centerRing.png"></img>
+            <img className="centerImage centerRing" alt="" src="img/680x680-centerRing.png"></img>
             <img className="centerImage" alt="Explore these smart stormwater solutions"
              src="img/680x680-CenterRing-INTRO-wText.png" style={introStyle}></img>
             <video id="centerVideo" className="centerVideo" preload="true" style={videoStyle}>

@@ -6,6 +6,10 @@
     height: 680px;
 }
 
+.centerRing {
+    z-index:3;
+}
+
 .centerVideo {
     width:563px;
     z-index:2;
