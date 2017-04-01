@@ -4,7 +4,11 @@
   "private": true,
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "bootstrap": "*",
+    "jquery": "*",
+    "react-bootstrap": "*",
+    "react-swipe-component": "*"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

@@ -6,10 +6,11 @@ import BarChartArea from './BarChartArea';
 import BackgroundVideo from "./BackgroundVideo";
 import CenterDetail from "./CenterDetail";
 
+
 class App extends Component {
     constructor(props) {
         super(props);
-        this.screenTimeout = 10000;
+        this.screenTimeout = 15000;
         this.timeout = setTimeout(this.reset.bind(this), this.screenTimeout);
     }
 
