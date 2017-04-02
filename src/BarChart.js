@@ -10,7 +10,7 @@ class BarChart extends Component {
             selected: false,
             fillCount: 0,
         };
-        this.delay = 1000;
+        this.delay = 500;
     }
 
     render() {
@@ -57,7 +57,7 @@ class BarChart extends Component {
             visible: true,
             fillCount: 0,
         };
-        this.animate();
+        setTimeout(this.animate.bind(this), 2000);
     }
 
     hideBar() {

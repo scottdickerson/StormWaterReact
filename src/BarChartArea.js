@@ -52,7 +52,7 @@ class BarChartArea extends Component {
                               ref={(aquiferBar) => { this.aquiferBar = aquiferBar; }}/>
                 </div>
                 <div className="graphCarousel" style={{visibility: visibility, transition: this.state.transition}}>
-                    <SwipeableCarousel slides={this.props.slides} visible={true} fontSize="12pt" height="225px" autoAdvance={false}
+                    <SwipeableCarousel slides={this.props.slides} visible={true} fontSize="11pt" height="225px" autoAdvance={false}
                                        onSelect={this.carouselSelected.bind(this)} textAlign="left"
                                        ref={(carousel) => { this.carousel = carousel; }}/>
                 </div>

@@ -31,26 +31,30 @@ class BackgroundVideo extends Component {
     }
 
     rain() {
-         console.log("rain");
-         this.setState({
-             video: "videos/rainVideo.mp4",
-         });
-         var video = document.getElementById("backgroundVideo");
-         video.load();
-         this.rainButton.setSelected(true);
-         this.sunButton.setSelected(false);
-        this.props.rainCallback();
+        if (!window.state || window.state==="sun") {
+             console.log("rain");
+             this.setState({
+                 video: "videos/rainVideo.mp4",
+             });
+             var video = document.getElementById("backgroundVideo");
+             video.load();
+             this.rainButton.setSelected(true);
+             this.sunButton.setSelected(false);
+            this.props.rainCallback();
+        }
     }
     sun() {
-        console.log("sun");
-        this.setState({
-            video: "videos/sunVideo.mp4",
-        });
-        var video = document.getElementById("backgroundVideo");
-        video.load()
-        this.sunButton.setSelected(true);
-        this.rainButton.setSelected(false);
-        this.props.sunCallback();
+        if (window.state === "rain") {
+            console.log("sun");
+            this.setState({
+                video: "videos/sunVideo.mp4",
+            });
+            var video = document.getElementById("backgroundVideo");
+            video.load()
+            this.sunButton.setSelected(true);
+            this.rainButton.setSelected(false);
+            this.props.sunCallback();
+        }
     }
 }
 
