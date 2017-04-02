@@ -1,35 +1,27 @@
 .graph {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-color: black;
-    border-width: 1px;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-top-style: solid;
-    width: 160px;
-}
-
-.graph1 {
-    position:absolute;
-    bottom: 0px;
-    background-color: #b3d4fc;
+    position: relative;
     z-index: 2;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 75px;
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .graphLabel {
-    top: -10px;
     position: relative;
+    font-family: Ubuntu Condensed, sans-serif;
+    font-size: 15pt;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.graphIcon {
-    top: -15px;
-    left: 65px;
-    position: relative;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: white;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
+.graphImage {
+    width: 75px;
+    height: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
+

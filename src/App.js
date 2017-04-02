@@ -20,8 +20,8 @@ class App extends Component {
           <BackgroundVideo rainCallback={this.rain.bind(this)}
                            sunCallback={this.sun.bind(this)}
                           />
-          <BarChartArea position="left" pollutionHeight="300px" aquiferHeight="80px" floodHeight="200px" height="733px" ref={(leftArea) => { this.leftArea = leftArea; }}/>
-          <BarChartArea position="right" pollutionHeight="100px" aquiferHeight="200px" floodHeight="50px" height="733px" ref={(rightArea) => { this.rightArea = rightArea; }}/>
+          <BarChartArea position="left" pollutionHeight={5} floodHeight={10} aquiferHeight={2} height="733px" ref={(leftArea) => { this.leftArea = leftArea; }}/>
+          <BarChartArea position="right" pollutionHeight={5} floodHeight={5} aquiferHeight={2} height="733px" ref={(rightArea) => { this.rightArea = rightArea; }}/>
           <CenterDetail  ref={(centerDetail) => { this.centerDetail = centerDetail; }}></CenterDetail>
       </div>
     );

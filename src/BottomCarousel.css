@@ -13,13 +13,6 @@
     top: 650px;
     left: 795px;
 }
-.carousel {
-    z-index: 4;
-    color: white;
-    height: 150px;
-    font-family: Ubuntu Condensed, sans-serif;
-    font-size: 16pt;
-}
 
 .slideTitle {
     color: white;

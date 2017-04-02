@@ -1,10 +1,32 @@
 .graphContainer {
     position:absolute;
+    bottom: 0px;
+    width: 401px;
+    z-index: 1;
+}
+
+.graphBackground {
+    position:absolute;
     background-color: #000000;
-    width: 400px;
+    width: 401px;
     opacity: 0.5;
     z-index: 1;
     bottom: 0px;
     border-radius: 10px 10px 0px 0px;
 }
 
+.topGraphArea {
+    display: flex;
+    margin-top: 50px;
+}
+
+.graphCarousel {
+    opacity: 1;
+    color: white;
+    width: 401px;
+    height: 233px;
+    z-index: 3;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
