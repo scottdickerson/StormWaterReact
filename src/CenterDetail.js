@@ -91,7 +91,11 @@ class CenterDetail extends Component {
 
         // If clicked in the rain state, need to trigger the sun state
         if (window.state==="rain") {
-            this.props.onSelect();
+            window.videoStateDispatcher.dispatch(
+                {
+                   videoState: "sun"
+                }
+            );
         }
 
         button.setSelected(true);

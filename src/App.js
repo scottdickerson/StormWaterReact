@@ -13,8 +13,10 @@ class App extends Component {
         super(props);
         this.screenTimeout = 180000;
         this.timeout = setTimeout(this.reset.bind(this), this.screenTimeout);
+        // First dispatcher is used for the barchart selections
         window.dispatcher = new ReactDispatcher();
-        window.state="sun";
+        // Second dispatcher is used for the video selections
+        window.videoStateDispatcher= new ReactDispatcher();
 
         this.leftBarChartSlides =
             [
@@ -62,10 +64,10 @@ class App extends Component {
       <div className="App">
           <BackgroundVideo rainCallback={this.rain.bind(this)}
                            sunCallback={this.sun.bind(this)}
-                          />
+                           ref={(backgroundVideo) => { this.backgroundVideo = backgroundVideo; }} />
           <BarChartArea position="left" slides={this.leftBarChartSlides} pollutionHeight={5} floodHeight={10} aquiferHeight={2} height="733px" ref={(leftArea) => { this.leftArea = leftArea; }}/>
           <BarChartArea position="right" slides={this.rightBarChartSlides} pollutionHeight={5} floodHeight={5} aquiferHeight={2} height="733px" ref={(rightArea) => { this.rightArea = rightArea; }}/>
-          <CenterDetail onSelect={this.sun.bind(this)} ref={(centerDetail) => { this.centerDetail = centerDetail; }}></CenterDetail>
+          <CenterDetail ref={(centerDetail) => { this.centerDetail = centerDetail; }}/>
       </div>
     );
   }
@@ -75,6 +77,7 @@ class App extends Component {
       document.body.addEventListener("onclick", this.screenTouched.bind(this), false);
       window.dispatcher.register(this.leftArea, this.leftArea.selectBarChart);
       window.dispatcher.register(this.rightArea, this.rightArea.selectBarChart);
+      window.videoStateDispatcher.register(this, this.videoChanged);
   }
 
   screenTouched() {
@@ -98,6 +101,15 @@ class App extends Component {
     reset() {
         this.centerDetail.reset();
         this.sun();
+    }
+    videoChanged(payload) {
+        if (payload.videoState === "sun") {
+            this.sun();
+            this.backgroundVideo.sun();
+        } else {
+            this.rain();
+            this.backgroundVideo.rain();
+        }
     }
 }
 
