@@ -33,9 +33,9 @@ class SwipeableCarousel extends Component {
                     this.state.slides.map(function (slide, i) {
                         return (<CarouselItem key={"carouseldiv" + i}>
                             {slide.title?<h3>{slide.title}</h3>:""}
-                            <p>{slide.detail}</p>
+                            <p style={{textAlign: this.props.textAlign?this.props.textAlign:"center"}}>{slide.detail}</p>
                         </CarouselItem>);
-                    })
+                    }.bind(this))
                 }
             </Carousel>
         </Swipe>):null  ;

@@ -71,7 +71,7 @@ class BottomCarousel extends Component {
             visible: true,
             slide: "GREEN ROOFS",
         });
-        this.carousel.setCarousel(this.slides[this.state.slide]);
+        this.carousel.setCarousel(this.slides["GREEN ROOFS"]);
     }
 
     rainCisterns() {
@@ -80,7 +80,7 @@ class BottomCarousel extends Component {
             visible: true,
             slide: "RAIN CISTERNS",
         });
-        this.carousel.setCarousel(this.slides[this.state.slide]);
+        this.carousel.setCarousel(this.slides["RAIN CISTERNS"]);
     }
 
     rainGardens() {
@@ -89,7 +89,7 @@ class BottomCarousel extends Component {
             visible: true,
             slide: "RAIN GARDENS",
         });
-        this.carousel.setCarousel(this.slides[this.state.slide]);
+        this.carousel.setCarousel(this.slides["RAIN GARDENS"]);
     }
 
     permeablePavement() {
@@ -98,7 +98,7 @@ class BottomCarousel extends Component {
             visible: true,
             slide: "PERMEABLE PAVEMENT",
         });
-        this.carousel.setCarousel(this.slides[this.state.slide]);
+        this.carousel.setCarousel(this.slides["PERMEABLE PAVEMENT"]);
     }
 
     landScaping() {
@@ -107,7 +107,7 @@ class BottomCarousel extends Component {
             visible: true,
             slide: "BIOSWALES",
         });
-        this.carousel.setCarousel(this.slides[this.state.slide]);
+        this.carousel.setCarousel(this.slides["BIOSWALES"]);
     }
 
     hide() {
