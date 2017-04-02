@@ -104,11 +104,11 @@ class App extends Component {
     }
     videoChanged(payload) {
         if (payload.videoState === "sun") {
-            this.sun();
             this.backgroundVideo.sun();
+            this.sun();
         } else {
-            this.rain();
             this.backgroundVideo.rain();
+            this.rain();
         }
     }
 }

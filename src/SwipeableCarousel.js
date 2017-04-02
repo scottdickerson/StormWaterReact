@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Carousel from 'react-bootstrap/lib/Carousel';
 import CarouselItem from 'react-bootstrap/lib/CarouselItem';
-import Swipe from 'react-swipe-component/lib/Swipe';
+import Swipe from './Swipe.js';
 import './SwipeableCarousel.css';
 
 class SwipeableCarousel extends Component {
