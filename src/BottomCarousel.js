@@ -56,7 +56,7 @@ class BottomCarousel extends Component {
 
                 return (<div className="slideCarousel" id="slideCarousel">
                         <div className="slideTitle" style={visibility}>{this.state.slide}</div>
-                        <SwipeableCarousel slides={this.slides[this.state.slide]} height="150px" fontSize="16pt" ref={(carousel) => { this.carousel = carousel; }}/>
+                        <SwipeableCarousel slides={this.slides[this.state.slide]} height="150px" fontSize="16pt" ref={(carousel) => { this.carousel = carousel; }} autoAdvance={true}/>
                         <img className="halfMoon" alt=""
                              src="img/680x680-HalfMoonOverlay-100Percent.png"
                              style={visibility}

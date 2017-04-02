@@ -88,6 +88,12 @@ class CenterDetail extends Component {
             this.selectedButton.setSelected(false);
         }
         this.selectedButton = button;
+
+        // If clicked in the rain state, need to trigger the sun state
+        if (window.state==="rain") {
+            this.props.onSelect();
+        }
+
         button.setSelected(true);
     }
     loadVideo(videoName) {
@@ -106,6 +112,8 @@ class CenterDetail extends Component {
         this.setState({
             video: null,
         })
+        var video = document.getElementById("centerVideo");
+        video.pause();
         this.bottomCarousel.hide();
     }
 }

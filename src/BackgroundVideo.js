@@ -33,7 +33,7 @@ class BackgroundVideo extends Component {
     rain() {
          console.log("rain");
          this.setState({
-             video: "videos/sunVideo.mp4",
+             video: "videos/rainVideo.mp4",
          });
          var video = document.getElementById("backgroundVideo");
          video.load();
@@ -44,7 +44,7 @@ class BackgroundVideo extends Component {
     sun() {
         console.log("sun");
         this.setState({
-            video: "videos/rainVideo.mp4",
+            video: "videos/sunVideo.mp4",
         });
         var video = document.getElementById("backgroundVideo");
         video.load()

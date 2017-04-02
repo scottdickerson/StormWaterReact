@@ -26,13 +26,14 @@ class SwipeableCarousel extends Component {
             onSwipedRight={this.onSwipeRightListener.bind(this)}
             onSwipe={this.onSwipe.bind(this)}
         >
-            <Carousel className="textCarousel" style={style} ref={(carousel) => {
+            <Carousel slide={this.props.autoAdvance} onSelect={this.props.onSelect} className="textCarousel" style={style} ref={(carousel) => {
                 this.carousel = carousel;
             }}>
                 {
                     this.state.slides.map(function (slide, i) {
                         return (<CarouselItem key={"carouseldiv" + i}>
-                            {slide.detail}
+                            {slide.title?<h3>{slide.title}</h3>:""}
+                            <p>{slide.detail}</p>
                         </CarouselItem>);
                     })
                 }
@@ -69,10 +70,20 @@ class SwipeableCarousel extends Component {
         console.log("swiped left");
         let previousActiveIndex = this.carousel.state.activeIndex;
         if (previousActiveIndex < this.state.slides.length-1) {
-            this.carousel.setState({
-                "activeIndex": previousActiveIndex + 1,
-            })
+            if (this.props.onSelect) {
+                window.dispatcher.dispatch(
+                    {
+                        chartSelected:previousActiveIndex + 1,
+                        direction: null,
+                    }
+                );
+            } else {
+                this.carousel.setState({
+                    "activeIndex": previousActiveIndex + 1,
+                })
+            }
         }
+
     }
 
     onSwipe() {
@@ -83,10 +94,26 @@ class SwipeableCarousel extends Component {
         console.log("swiped right");
         let previousActiveIndex = this.carousel.state.activeIndex;
         if (previousActiveIndex > 0) {
-            this.carousel.setState({
-                "activeIndex": previousActiveIndex - 1,
-            })
+            if (this.props.onSelect) {
+                window.dispatcher.dispatch(
+                    {
+                        chartSelected:previousActiveIndex - 1,
+                        direction: null,
+                    }
+                );
+            } else {
+                this.carousel.setState({
+                    "activeIndex": previousActiveIndex - 1,
+                })
+            }
         }
+    }
+
+    selectSlide(index, direction) {
+        this.carousel.setState({
+            activeIndex: index,
+            direction: direction
+        });
     }
 }
 

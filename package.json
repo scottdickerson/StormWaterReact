@@ -8,7 +8,10 @@
     "bootstrap": "*",
     "jquery": "*",
     "react-bootstrap": "*",
-    "react-swipe-component": "*"
+    "react-swipe-component": "*",
+    "fbemitter": "*",
+    "flux": "*",
+    "flux-react-dispatcher": "*"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
