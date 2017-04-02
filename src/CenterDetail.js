@@ -25,11 +25,13 @@ class CenterDetail extends Component {
         <div>
             <img className="centerImage centerRing" alt="" src="img/680x680-centerRing.png"></img>
             <img className="centerImage" alt="Explore these smart stormwater solutions"
-             src="img/680x680-CenterRing-INTRO-wText.png" style={introStyle}></img>
+             src="img/680x680-CenterRing-INTRO-noText.png" style={introStyle}></img>
             <video id="centerVideo" className="centerVideo" preload="true" style={videoStyle}>
                 <source src={this.state.video} type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
+            <div className="centerTitle">EXPLORE</div>
+            <div className="centerSubtitle">THESE SMART <br/>STORMWATER SOLUTIONS!</div>
             <div className="centerText">
                 Rain is great, but too much stormwater rushing through <br/>
                 our cities means increased flooding and pollution. Smart <br/>

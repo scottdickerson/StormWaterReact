@@ -28,7 +28,31 @@
     top: 600px;
     width: 500px;
     text-align: center;
-    font-family: Ubuntu Condensed, sans-serif;
-    font-size: 15pt;
+    font-family: Ubuntu, sans-serif;
+    font-size: 14pt;
+    color: #FFFFFF;
+}
+
+.centerTitle {
+    position: absolute;
+    left: 710px;
+    top: 440px;
+    width: 500px;
+    text-align: center;
+    font-family: Ubuntu, sans-serif;
+    font-size: 40pt;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.centerSubtitle {
+    position: absolute;
+    left: 709px;
+    top: 503px;
+    width: 500px;
+    text-align: center;
+    font-family: Ubuntu, sans-serif;
+    font-size: 17pt;
+    font-weight: bold;
     color: #FFFFFF;
 }
