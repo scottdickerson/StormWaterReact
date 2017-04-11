@@ -99,8 +99,15 @@ class App extends Component {
     }
 
     reset() {
-        this.centerDetail.reset();
-        this.sun();
+        // If clicked in the rain state, need to trigger the sun state
+        if (window.state==="rain") {
+            this.centerDetail.reset();
+            window.videoStateDispatcher.dispatch(
+                {
+                    videoState: "sun"
+                }
+            );
+        }
     }
     videoChanged(payload) {
         if (payload.videoState === "sun") {
