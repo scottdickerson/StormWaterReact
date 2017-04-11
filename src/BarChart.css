@@ -1,9 +1,7 @@
 .graph {
     position: relative;
     z-index: 2;
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 75px;
+    width: 133px;
     height: 500px;
     display: flex;
     flex-direction: column-reverse;
@@ -22,5 +20,7 @@
     width: 75px;
     height: 40px;
     margin-top: -14px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 

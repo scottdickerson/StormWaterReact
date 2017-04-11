@@ -30,9 +30,9 @@ class CenterDetail extends Component {
                 <source src={this.state.video} type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
-            <div className="centerTitle">EXPLORE</div>
-            <div className="centerSubtitle">THESE SMART <br/>STORMWATER SOLUTIONS!</div>
-            <div className="centerText">
+            <div className="centerTitle" style={introStyle}>EXPLORE</div>
+            <div className="centerSubtitle" style={introStyle}>THESE SMART <br/>STORMWATER SOLUTIONS!</div>
+            <div className="centerText" style={introStyle}>
                 Rain is great, but too much stormwater rushing through <br/>
                 our cities means increased flooding and pollution. Smart <br/>
                 cities can use <b>Green Stormwater Infrastructure</b> to help <br/>

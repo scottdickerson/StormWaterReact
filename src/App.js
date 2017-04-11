@@ -65,8 +65,8 @@ class App extends Component {
           <BackgroundVideo rainCallback={this.rain.bind(this)}
                            sunCallback={this.sun.bind(this)}
                            ref={(backgroundVideo) => { this.backgroundVideo = backgroundVideo; }} />
-          <BarChartArea position="left" slides={this.leftBarChartSlides} pollutionHeight={5} floodHeight={9} aquiferHeight={1} height="733px" ref={(leftArea) => { this.leftArea = leftArea; }}/>
-          <BarChartArea position="right" slides={this.rightBarChartSlides} pollutionHeight={2} floodHeight={4} aquiferHeight={3} height="733px" ref={(rightArea) => { this.rightArea = rightArea; }}/>
+          <BarChartArea position="left" slides={this.leftBarChartSlides} pollutionHeight={14} floodHeight={16} aquiferHeight={3} height="733px" ref={(leftArea) => { this.leftArea = leftArea; }}/>
+          <BarChartArea position="right" slides={this.rightBarChartSlides} pollutionHeight={4} floodHeight={5} aquiferHeight={10} height="733px" ref={(rightArea) => { this.rightArea = rightArea; }}/>
           <CenterDetail ref={(centerDetail) => { this.centerDetail = centerDetail; }}/>
       </div>
     );

@@ -11,6 +11,7 @@ class BarChart extends Component {
             fillCount: 0,
         };
         this.delay = 500;
+        this.animating = false;
     }
 
     render() {
@@ -42,7 +43,9 @@ class BarChart extends Component {
     animate() {
         if (this.state.fillCount < this.props.fill) {
             this.fillBar();
-            setTimeout(this.animate.bind(this), this.delay);
+            this.animation = setTimeout(this.animate.bind(this), this.delay);
+        } else {
+            this.animating = false;
         }
     }
 
@@ -53,18 +56,25 @@ class BarChart extends Component {
     }
 
     activateBar() {
+
         this.state = {
             visible: true,
             fillCount: 0,
         };
-        setTimeout(this.animate.bind(this), 2000);
+        if (this.animating == false) {
+            this.animation = setTimeout(this.animate.bind(this), 3000);
+            this.animating = true;
+        }
     }
 
     hideBar() {
+        if (this.animation)
+            clearTimeout(this.animation);
         this.state = {
             visible: false,
             fillCount: 0,
         }
+        this.animating = false
     }
 
     setSelected(selected) {

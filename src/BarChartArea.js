@@ -25,6 +25,7 @@ class BarChartArea extends Component {
                 visibility: visibility,
                 height: this.state.height,
                 transition: this.state.transition,
+                transitionDelay: this.state.transitionDelay,
             };
         } else {
             style={
@@ -32,6 +33,7 @@ class BarChartArea extends Component {
                 visibility: visibility,
                 height: this.state.height,
                 transition: this.state.transition,
+                transitionDelay: this.state.transitionDelay,
             };
         }
 
@@ -67,6 +69,7 @@ class BarChartArea extends Component {
             visible: true,
             height: this.props.height,
             transition: "height 2s",
+            transitionDelay: "1s",
         });
 
         this.pollutionBar.activateBar();
@@ -79,6 +82,7 @@ class BarChartArea extends Component {
             visible: false,
             height: "0px",
             transition: "height 0s",
+            transitionDelay: "0s",
         });
         this.carousel.selectSlide(0,null);
         this.pollutionBar.hideBar();

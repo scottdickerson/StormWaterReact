@@ -7,7 +7,7 @@ class BackgroundVideo extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            video: "videos/sunVideo.mp4"
+            video: "videos/bg_sun.mp4"
         };
     }
 
@@ -34,7 +34,7 @@ class BackgroundVideo extends Component {
         if (!window.state || window.state==="sun") {
              console.log("rain");
              this.setState({
-                 video: "videos/rainVideo.mp4",
+                 video: "videos/bg_rain.mp4",
              });
              var video = document.getElementById("backgroundVideo");
              video.load();
@@ -47,7 +47,7 @@ class BackgroundVideo extends Component {
         if (window.state === "rain") {
             console.log("sun");
             this.setState({
-                video: "videos/sunVideo.mp4",
+                video: "videos/bg_sun.mp4",
             });
             var video = document.getElementById("backgroundVideo");
             video.load()
