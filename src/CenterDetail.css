@@ -12,6 +12,7 @@
 
 .centerVideo {
     width:563px;
+    height:563px;
     z-index:2;
     position: absolute;
     left:676px;

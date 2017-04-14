@@ -61,7 +61,7 @@ class BarChart extends Component {
             visible: true,
             fillCount: 0,
         };
-        if (this.animating == false) {
+        if (this.animating === false) {
             this.animation = setTimeout(this.animate.bind(this), 3000);
             this.animating = true;
         }

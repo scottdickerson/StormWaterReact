@@ -59,28 +59,28 @@ class CenterDetail extends Component {
 
     rainCisterns() {
         console.log("Rain Cisterns clicked");
-        this.loadVideo("videos/rainCisterns.mp4");
+        this.loadVideo("videos/rainbarrel.mp4");
         this.selectButton(this.rainCisternsButton);
         this.bottomCarousel.rainCisterns();
     }
 
     rainGardens() {
         console.log("Rain Gardens clicked");
-        this.loadVideo("videos/rainGardens.mp4");
+        this.loadVideo("videos/raingarden.mp4");
         this.selectButton(this.rainGardensButton);
         this.bottomCarousel.rainGardens();
     }
 
     permeablePavement() {
         console.log("Permeable Pavement clicked");
-        this.loadVideo("videos/permeablePavement.mp4");
+        this.loadVideo("videos/pavement.mp4");
         this.selectButton(this.permPavementButton);
         this.bottomCarousel.permeablePavement();
     }
 
     landScaping() {
         console.log("Landscaping clicked");
-        this.loadVideo("videos/landscaping.mp4");
+        this.loadVideo("videos/bioswales.mp4");
         this.selectButton(this.bioswalesButton);
         this.bottomCarousel.landScaping();
     }
