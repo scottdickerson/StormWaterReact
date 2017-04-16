@@ -30,6 +30,7 @@ class CenterDetail extends Component {
                 <source src={this.state.video} type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
+            <div className="staticImage"></div>
             <div className="centerTitle" style={introStyle}>EXPLORE</div>
             <div className="centerSubtitle" style={introStyle}>THESE SMART <br/>STORMWATER SOLUTIONS!</div>
             <div className="centerText" style={introStyle}>

@@ -4,6 +4,7 @@
     top: 251px;
     width:680px;
     height: 680px;
+    z-index: 1;
 }
 
 .centerRing {
@@ -23,6 +24,18 @@
     border-width:1px;
 }
 
+.staticImage {
+    width:563px;
+    height:563px;
+    z-index:0;
+    position: absolute;
+    left:676px;
+    top:310px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
 .centerText {
     position: absolute;
     left: 715px;
@@ -31,6 +44,7 @@
     text-align: center;
     font-family: Ubuntu, sans-serif;
     font-size: 14pt;
+    z-index: 1;
     color: #FFFFFF;
 }
 
@@ -39,6 +53,7 @@
     left: 710px;
     top: 440px;
     width: 500px;
+    z-index: 1;
     text-align: center;
     font-family: Ubuntu, sans-serif;
     font-size: 40pt;
@@ -50,6 +65,7 @@
     position: absolute;
     left: 709px;
     top: 503px;
+    z-index: 1;
     width: 500px;
     text-align: center;
     font-family: Ubuntu, sans-serif;
