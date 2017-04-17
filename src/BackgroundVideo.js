@@ -20,7 +20,7 @@ class BackgroundVideo extends Component {
                 <WeatherButton className="sun" onClick={this.sun.bind(this)} ref={(sunButton) => { this.sunButton = sunButton; }}></WeatherButton>
                 <div className="inner-container">
                     <div>
-                        <video id="backgroundVideo" className="backgroundVideo" muted={true} loop autoPlay={true} preload="true">
+                        <video id="backgroundVideo" className="backgroundVideo" loop autoPlay={true} preload="true">
                             <source src={this.state.video} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
