@@ -47,31 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="489" lean-forward="true" selection-start-line="0" selection-start-column="489" selection-end-line="0" selection-end-column="489" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BackgroundVideo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BackgroundVideo.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BarChart.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BarChart.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -100,7 +80,7 @@
       <file leaf-file-name="BackgroundVideo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BackgroundVideo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="168">
               <caret line="22" column="79" lean-forward="false" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
               <folding />
             </state>
@@ -112,6 +92,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
               <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BottomCarousel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BottomCarousel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="468" lean-forward="true" selection-start-line="0" selection-start-column="468" selection-end-line="0" selection-end-column="468" />
               <folding />
             </state>
           </provider>
@@ -183,7 +183,6 @@
         <option value="$PROJECT_DIR$/node_modules/react-scripts/babelrc" />
         <option value="$PROJECT_DIR$/src/SwipeableCarousel.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/BottomCarousel.js" />
         <option value="$PROJECT_DIR$/src/BarChartArea.css" />
         <option value="$PROJECT_DIR$/src/BarChartArea.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
@@ -193,6 +192,7 @@
         <option value="$PROJECT_DIR$/src/CenterDetail.js" />
         <option value="$PROJECT_DIR$/src/CenterDetail.css" />
         <option value="$PROJECT_DIR$/src/BackgroundVideo.js" />
+        <option value="$PROJECT_DIR$/src/BottomCarousel.js" />
         <option value="$PROJECT_DIR$/build/index.html" />
       </list>
     </option>
@@ -397,12 +397,12 @@
       <workItem from="1492176457159" duration="33000" />
       <workItem from="1492386577517" duration="591000" />
       <workItem from="1492387479893" duration="35000" />
-      <workItem from="1492389759323" duration="141000" />
+      <workItem from="1492389759323" duration="886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81642000" />
+    <option name="totallyTimeSpent" value="82387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="79" y="-10" width="1584" height="1054" extended-state="0" />
@@ -672,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BottomCarousel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="62" column="92" lean-forward="false" selection-start-line="62" selection-start-column="92" selection-end-line="62" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BarChartArea.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -699,16 +692,6 @@
         <state relative-caret-position="272">
           <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <marker date="1491878289852" expanded="true" signature="698:3590" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,6 +735,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackgroundVideo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="22" column="79" lean-forward="false" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <marker date="1491878289852" expanded="true" signature="698:3590" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CenterDetail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -760,10 +761,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackgroundVideo.js">
+    <entry file="file://$PROJECT_DIR$/src/BottomCarousel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="79" lean-forward="false" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+        <state relative-caret-position="644">
+          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -771,7 +772,7 @@
     <entry file="file://$PROJECT_DIR$/build/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="489" lean-forward="true" selection-start-line="0" selection-start-column="489" selection-end-line="0" selection-end-column="489" />
+          <caret line="0" column="468" lean-forward="true" selection-start-line="0" selection-start-column="468" selection-end-line="0" selection-end-column="468" />
           <folding />
         </state>
       </provider>

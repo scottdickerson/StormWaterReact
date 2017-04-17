@@ -41,9 +41,9 @@ class BottomCarousel extends Component {
             ],
             "RAIN GARDENS": [
                 {detail: "are slightly sunken planted areas that absorb rainwater"},
-                {detail: "directs rainfall towards garden to collect water onsite"},
-                {detail: "filters water as it slowly seeps into the ground"},
-                {detail: "helps increase aquifer levels"},
+                {detail: "direct rainfall towards garden to collect water onsite"},
+                {detail: "filter water as it slowly seeps into the ground"},
+                {detail: "help increase aquifer levels"},
             ]
 
         };
